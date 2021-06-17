@@ -7,10 +7,16 @@
     charset=UTF-8">
 </head>
 <body>
-<h1>Result</h1>
+<h3>Employee form submitted</h3>
 <p th:text=" 'id:' +${greeting.id}"/>
-<p th:text=" 'name:' +${greeting.name}"/>
-<a href="/employee"> Submit another message</a>
+<p th:text=" 'firstName:' +${greeting.firstName}"/>
+<p th:text=" 'lastName:' +${greeting.lastName}"/>
+<p th:text=" 'email:' +${greeting.email}"/>
+
+<a href="/employee"> Add another employee</a>
+<p><input type="submit"  value="Add"/>
+  <input type="submit"  value="Update"/>
+  <input type="submit"  value="Delete"/> </p>
 
 </body>
 </html>
